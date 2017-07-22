@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private static final int RC_SIGN_IN = 1001;
     private ImageView ivUserImage;
-    private Button btnGoogleSignout, btnRevokeAccess;
+    private Button btnGoogleSignout, btnRevokeAccess, btnNext;
     private SignInButton btnGoogleSignin;
     private TextView tvUserName, tvUserEmail;
     private GoogleApiClient googleApiClient;
@@ -187,10 +187,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnRevokeAccess = (Button) findViewById(R.id.btn_revoke_access);
         tvUserEmail = (TextView) findViewById(R.id.tv_userEmail);
         tvUserName = (TextView) findViewById(R.id.tv_userName);
+        btnNext = (Button) findViewById(R.id.btn_next);
         //setting up onClickListeners;
         btnGoogleSignin.setOnClickListener(this);
         btnGoogleSignout.setOnClickListener(this);
         btnRevokeAccess.setOnClickListener(this);
+        btnNext.setOnClickListener(this);
     }
 
     /**
@@ -251,8 +253,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn_revoke_access:
                 revokeAccess();
                 break;
+
+            case R.id.btn_next:
+                nextScreen();
+                break;
+            default:
+                break;
+
         }
 
+    }
+
+    /**
+     * fire intent to next screen;
+     */
+    private void nextScreen() {
+        startActivity(new Intent(MainActivity.this, AndroidResideMenu.class));
+        finish();
     }
 
     /**

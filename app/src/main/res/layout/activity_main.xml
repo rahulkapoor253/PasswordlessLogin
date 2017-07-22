@@ -18,48 +18,57 @@
         />
 
     <TextView
+        android:id="@+id/tv_userName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="14dp"
         android:text="dummy user name"
         android:textSize="16sp"
-        android:id="@+id/tv_userName"
         />
 
     <TextView
+        android:id="@+id/tv_userEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="14dp"
         android:text="dummy user Email"
         android:textSize="16sp"
-        android:id="@+id/tv_userEmail"
         />
 
     <com.google.android.gms.common.SignInButton
         android:id="@+id/btn_sign_in"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
         android:layout_marginTop="20dp"
-        android:background="@color/colorAccent"
-        android:layout_marginBottom="20dp"/>
+        android:background="@color/colorAccent"/>
 
     <Button
         android:id="@+id/btn_sign_out"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Sign Out"
-        android:visibility="gone"
+        android:layout_marginBottom="10dp"
         android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"/>
+        android:text="Sign Out"
+        android:visibility="gone"/>
 
     <Button
         android:id="@+id/btn_revoke_access"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Revoke Access"
-        android:visibility="gone" />
+        android:visibility="gone"/>
 
-
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:background="@color/colorAccent"
+        android:text="Next->"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        />
 
 
 </LinearLayout>
