@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "395495804390",
+    "project_id": "project-5127467856829496295"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:395495804390:android:45969ece2fe5f4cf",
+        "android_client_info": {
+          "package_name": "com.example.rahulkapoor.passwordlesslogin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "395495804390-iva730d0o1s311698k0a944knv9d0jbj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.rahulkapoor.passwordlesslogin",
+            "certificate_hash": "41cd71c4ead4bff217d13e9016d425098214862d"
+          }
+        },
+        {
+          "client_id": "395495804390-n7v5csp47g61dcqhrsi71crlhkh8cjoq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZLAHifeedXvmkkMSBMkAtSM9t9inUMlc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
